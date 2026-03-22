@@ -11,9 +11,11 @@ npm install hayacrypt
 ## CLI
 
 ```
-hayacrypt encrypt --infile plain.txt --passphrase secret --outfile encrypted.txt
-hayacrypt decrypt --infile encrypted.txt --passphrase secret --outfile decrypted.txt
+hayacrypt encrypt --in plain.txt --passphrase secret --out encrypted.txt
+hayacrypt decrypt --in encrypted.txt --passphrase secret --out decrypted.txt
 ```
+
+`--in` and `--out` can be files or directories. Directories are processed recursively, preserving structure.
 
 ## API
 
